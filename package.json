@@ -10,7 +10,9 @@
   "private": false,
   "author": "Serhat Mutlu",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
   "exports": {
@@ -70,6 +72,9 @@
     "language"
   ],
   "lint-staged": {
-    "**/*.{js,mjs,cjs,ts,mts,jsx,tsx,json}": ["biome check --write"]
-  }
+    "**/*.{js,mjs,cjs,ts,mts,jsx,tsx,json}": [
+      "biome check --write"
+    ]
+  },
+  "version": "1.1.0"
 }
