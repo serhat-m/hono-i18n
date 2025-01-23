@@ -1,0 +1,4 @@
+. "$(dirname -- "$0")/utils/utils.sh"
+
+print_message "🔎 Check if the commit message matches the pattern of conventional commits"
+pnpm exec commitlint --edit ${1}

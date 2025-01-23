@@ -1,0 +1,4 @@
+. "$(dirname -- "$0")/utils/utils.sh"
+
+print_message "🧪 Run tests"
+pnpm run test
