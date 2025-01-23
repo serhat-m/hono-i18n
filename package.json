@@ -1,0 +1,75 @@
+{
+  "name": "hono-i18n",
+  "type": "module",
+  "description": "Functionality for implementing internationalization in Hono. With first-class TypeScript support, it ensures type safety and seamless integration, making it easier to manage and implement translations across different languages.",
+  "engines": {
+    "node": ">=23.0.0 <24.0.0",
+    "pnpm": ">= 9.0.0 <10.0.0"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "private": false,
+  "author": "Serhat Mutlu",
+  "license": "MIT",
+  "files": ["dist"],
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhat-m/hono-i18n.git"
+  },
+  "scripts": {
+    "test": "vitest --run --reporter verbose",
+    "lint": "tsc --noEmit && biome check --write .",
+    "format": "biome format --write .",
+    "lint:staged": "lint-staged",
+    "build": "node build.ts",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "core-i18n": "^1.1.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@commitlint/cli": "19.6.1",
+    "@commitlint/config-conventional": "19.6.0",
+    "@types/node": "22.10.10",
+    "hono": "^4.6.18",
+    "husky": "9.1.7",
+    "lint-staged": "15.4.2",
+    "tsup": "^8.3.5",
+    "typescript": "5.7.3",
+    "vitest": "3.0.4"
+  },
+  "keywords": [
+    "hono",
+    "hono-i18n",
+    "i18n",
+    "intl",
+    "international",
+    "internationalization",
+    "placeholder",
+    "plural",
+    "pluralization",
+    "locale",
+    "localization",
+    "localize",
+    "translations",
+    "translate",
+    "language"
+  ],
+  "lint-staged": {
+    "**/*.{js,mjs,cjs,ts,mts,jsx,tsx,json}": ["biome check --write"]
+  }
+}

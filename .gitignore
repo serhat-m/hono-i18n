@@ -1,0 +1,10 @@
+.env
+.env.local*
+node_modules
+**/.DS_Store
+*.tsbuildinfo
+*.pem
+npm-debug.log*
+dist
+tsconfig.vitest-temp.json
+CHANGELOG.md
