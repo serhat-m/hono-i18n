@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/serhat-m/hono-i18n/compare/v1.1.0...v1.1.1) (2025-03-17)
+
+
+### Miscellaneous
+
+* update dev dependencies ([838e918](https://github.com/serhat-m/hono-i18n/commit/838e9185b02166a18314ce98438b97b0b9049e52))
+
 ## [1.1.0](https://github.com/serhat-m/hono-i18n/compare/v1.0.0...v1.1.0) (2025-01-23)
 
 
