@@ -3,10 +3,10 @@
   "type": "module",
   "description": "Functionality for implementing internationalization in Hono. With first-class TypeScript support, it ensures type safety and seamless integration, making it easier to manage and implement translations across different languages.",
   "engines": {
-    "node": ">=23.0.0 <24.0.0",
-    "pnpm": ">= 9.0.0 <11.0.0"
+    "node": ">=24.0.0 <25.0.0",
+    "pnpm": ">= 10.0.0 <11.0.0"
   },
-  "packageManager": "pnpm@10.6.4",
+  "packageManager": "pnpm@10.13.1",
   "private": false,
   "author": "Serhat Mutlu",
   "license": "MIT",
@@ -33,26 +33,26 @@
   },
   "scripts": {
     "test": "vitest --run --reporter verbose",
-    "lint": "tsc --noEmit && biome check --write .",
-    "format": "biome format --write .",
     "lint:staged": "lint-staged",
+    "lint": "tsc -p tsconfig.json && biome check .",
+    "lint:fix": "biome check --write .",
     "build": "node build.ts",
     "prepare": "husky"
   },
   "dependencies": {
-    "core-i18n": "^1.1.8"
+    "core-i18n": "1.1.9"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@commitlint/cli": "19.8.0",
-    "@commitlint/config-conventional": "19.8.0",
-    "@types/node": "22.13.10",
-    "hono": "^4.7.4",
+    "@biomejs/biome": "2.1.1",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@types/node": "24.0.13",
+    "hono": "4.8.4",
     "husky": "9.1.7",
-    "lint-staged": "15.5.0",
-    "tsup": "^8.4.0",
-    "typescript": "5.8.2",
-    "vitest": "3.0.9"
+    "lint-staged": "16.1.2",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3",
+    "vitest": "3.2.4"
   },
   "keywords": [
     "hono",
@@ -71,10 +71,5 @@
     "translate",
     "language"
   ],
-  "lint-staged": {
-    "**/*.{js,mjs,cjs,ts,mts,jsx,tsx,json}": [
-      "biome check --write"
-    ]
-  },
   "version": "1.1.1"
 }

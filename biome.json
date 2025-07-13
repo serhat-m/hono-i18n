@@ -1,7 +1,12 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
   "files": {
-    "ignore": ["node_modules", "dist", "tsconfig.vitest-temp.json"]
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/tsconfig.vitest-temp.json"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -30,7 +35,18 @@
         "useImportType": "error",
         "useExportType": "error",
         "noNamespace": "off",
-        "noDefaultExport": "error"
+        "noDefaultExport": "error",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error",
+        "useConsistentCurlyBraces": "error"
       },
       "suspicious": {
         "noEmptyInterface": "off",
@@ -47,7 +63,21 @@
       }
     }
   },
-  "organizeImports": {
-    "enabled": true
-  }
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "overrides": [
+    {
+      "includes": [
+        "**/commitlint.config.ts",
+        "**/vitest.config.ts",
+        "**/lint-staged.config.js"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
 }

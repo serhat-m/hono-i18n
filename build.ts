@@ -1,4 +1,4 @@
-import { type Options, build } from "tsup"
+import { build, type Options } from "tsup"
 
 const options: Options = {
   tsconfig: "./tsconfig.json",
