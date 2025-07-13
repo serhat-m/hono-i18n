@@ -1,7 +1,6 @@
 import path from "node:path"
 import { defineConfig } from "vitest/config"
 
-// biome-ignore lint/style/noDefaultExport: <explanation>
 export default defineConfig({
   test: {
     restoreMocks: true,

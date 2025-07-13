@@ -1,4 +1,4 @@
-import { type Locale, type Messages, createTranslate } from "core-i18n"
+import { createTranslate, type Locale, type Messages } from "core-i18n"
 import type { Context, Next } from "hono"
 
 declare module "hono" {
@@ -65,15 +65,7 @@ export function createI18n<
   Ctx extends Context,
   TMessages extends Messages,
   DefaultLocale extends keyof TMessages extends string ? keyof TMessages : string,
->({
-  messages,
-  defaultLocale,
-  getLocale,
-}: {
-  messages: TMessages
-  defaultLocale: DefaultLocale
-  getLocale: GetLocale<Ctx, DefaultLocale>
-}) {
+>({ messages, defaultLocale, getLocale }: { messages: TMessages; defaultLocale: DefaultLocale; getLocale: GetLocale<Ctx, DefaultLocale> }) {
   if (!Object.keys(messages).includes(defaultLocale)) {
     throw new Error("defaultLocale is not available in messages")
   }
