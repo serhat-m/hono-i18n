@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/serhat-m/hono-i18n/compare/v1.1.1...v1.1.2) (2025-07-13)
+
+
+### Miscellaneous
+
+* update dev dependencies and migrate biome to v2 ([c3752c5](https://github.com/serhat-m/hono-i18n/commit/c3752c5eea540f171d89026369cc21afe0dbfd1e))
+
 ## [1.1.1](https://github.com/serhat-m/hono-i18n/compare/v1.1.0...v1.1.1) (2025-03-17)
 
 
