@@ -2,11 +2,7 @@
   "name": "hono-i18n",
   "type": "module",
   "description": "Functionality for implementing internationalization in Hono. With first-class TypeScript support, it ensures type safety and seamless integration, making it easier to manage and implement translations across different languages.",
-  "engines": {
-    "node": ">=24.0.0 <25.0.0",
-    "pnpm": ">= 10.0.0 <11.0.0"
-  },
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.28.1",
   "private": false,
   "author": "Serhat Mutlu",
   "license": "MIT",
