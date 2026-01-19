@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.3](https://github.com/serhat-m/hono-i18n/compare/v1.1.2...v1.1.3) (2026-01-19)
+
+
+### Miscellaneous
+
+* remove engines and update package manager ([1cf31d8](https://github.com/serhat-m/hono-i18n/commit/1cf31d8de5993b6be05bf37b30b2f5e4afa63073))
+* update dependencies ([bf64d23](https://github.com/serhat-m/hono-i18n/commit/bf64d23f5724a73673b36ef8aaefa1590039ffe9))
+* update node version in workflows ([3c2ccb7](https://github.com/serhat-m/hono-i18n/commit/3c2ccb7404adb56eac4cb80b830089c44ebc67f7))
+
 ## [1.1.2](https://github.com/serhat-m/hono-i18n/compare/v1.1.1...v1.1.2) (2025-07-13)
 
 
